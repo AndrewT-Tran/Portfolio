@@ -1,6 +1,6 @@
 # Portfolio
 ## Hi, I’m Andrew 👋
-I’m a student web developer who loves to create dynamic and responsive web applications using the MERN stack (MongoDB, Express, React, and Node.js).
+I’m a web developer learning to create dynamic and responsive web applications using the MERN stack (MongoDB, Express, React, and Node.js).
 
 ##My Skills 💻
 
