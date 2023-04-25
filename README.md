@@ -2,7 +2,7 @@
 ## Hi, I’m Andrew 👋
 I’m a web developer learning to create dynamic and responsive web applications using the MERN stack (MongoDB, Express, React, and Node.js).
 
-##My Skills 💻
+## My Skills 💻
 
 Front-end development with HTML, CSS, JavaScript, and React
 Back-end development with Node.js, Express, and MongoDB
@@ -20,7 +20,7 @@ Blog App: A full-stack blog app that allows you to create, read, update, and del
 Movie Finder: A movie search app that uses the OMDB API to fetch movie data based on your query. You can also view movie details, ratings, and trailers. Demo | Code
 
 
-##My Contact 📫
+## My Contact 📫
 If you want to get in touch with me, you can reach me at:
 
 Email: AndrewTTran92@gmail.com
