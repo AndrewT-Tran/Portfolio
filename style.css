@@ -13,7 +13,9 @@ h1.gradient-text {
 }
 
 body {
-  background-color: #fffbf9;
+  background-color: #ece8e6;
+  font-family: lato;
+  font-weight: 400;
 }
 
 .padding {
