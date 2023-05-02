@@ -1,55 +1,49 @@
-var words = document.getElementsByClassName("word");
-var wordArray = [];
-var currentWord = 0;
-
-words[currentWord].style.opacity = 1;
-for (var i = 0; i < words.length; i++) {
-  splitLetters(words[i]);
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #999;
 }
 
-function changeWord() {
-  var cw = wordArray[currentWord];
-  var nw =
-    currentWord == words.length - 1 ? wordArray[0] : wordArray[currentWord + 1];
-  for (var i = 0; i < cw.length; i++) {
-    animateLetterOut(cw, i);
+.box {
+  background: white;
+  padding: 16px 24px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.01);
+}
+.box::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.9) translateZ(0);
+  filter: blur(15px);
+  background: linear-gradient(to left, #ff5770, #e4428d, #c42da8, #9e16c3, #6501de, #9e16c3, #c42da8, #e4428d, #ff5770);
+  background-size: 200% 200%;
+  -webkit-animation: animateGlow 1.25s linear infinite;
+          animation: animateGlow 1.25s linear infinite;
+}
+
+@-webkit-keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
   }
-
-  for (var i = 0; i < nw.length; i++) {
-    nw[i].className = "letter behind";
-    nw[0].parentElement.style.opacity = 1;
-    animateLetterIn(nw, i);
+  100% {
+    background-position: 200% 50%;
   }
-
-  currentWord = currentWord == wordArray.length - 1 ? 0 : currentWord + 1;
 }
 
-function animateLetterOut(cw, i) {
-  setTimeout(function () {
-    cw[i].className = "letter out";
-  }, i * 80);
-}
-
-function animateLetterIn(nw, i) {
-  setTimeout(function () {
-    nw[i].className = "letter in";
-  }, 340 + i * 80);
-}
-
-function splitLetters(word) {
-  var content = word.innerHTML;
-  word.innerHTML = "";
-  var letters = [];
-  for (var i = 0; i < content.length; i++) {
-    var letter = document.createElement("span");
-    letter.className = "letter";
-    letter.innerHTML = content.charAt(i);
-    word.appendChild(letter);
-    letters.push(letter);
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
   }
-
-  wordArray.push(letters);
+  100% {
+    background-position: 200% 50%;
+  }
 }
-
-changeWord();
-setInterval(changeWord, 4000);
