@@ -1,190 +1,71 @@
 <!doctype html>
 <html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andrew Tran</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
 
-<head>
-  <title>Andrew T Tran</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-
-
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
 
 <body>
-
-  <main>
-    <!-- place main content here -->
-    <!-- Hero Section -->
-
-    <div class="container-fluid w-100 h-100 p-3 border-bottom border-danger">
-          <div class="px-3 py-5 my-5 mx-auto text-center">
-            <h1 class="display-2 bold text-body-emphasis">Hi, my name is </h1>
-            <span class="gradient-text glow">Andrew</span></h1>
-            <p class="display-4">I’m a student full stack web developer learning to create dynamic and responsive web applications using
-              the MERN stack.</p>
-            <a href="#aboutme">
-              <button type="button" class="btn btn-outline-warning"> Check me out </button>
-            </a>
-
-          </div>
-        </div>
-      </div>
+  <!-- partial:index.partial.html -->
+  <!-- Canvas -->
+  <canvas class="orb-canvas"></canvas>
+  <!-- Overlay -->
+  <div class="overlay">
+    <!-- Overlay inner wrapper -->
+    <div class="overlay__inner">
+      <!-- Title -->
+      <h1 class="overlay__title">
+        Hi, I'm
+        <span class="text-gradient">Andrew</span> 👋 , <br>I'm a student learning to create dynamic, responsive, and
+        progressive web applications using the MERN stack.
+      </h1>
+      <!-- Description -->
+      <p class="overlay__description">
+        As I sharpen my skills and further my understanding of different technologies, I plan on showcasing my
+        projects and sharing my experiences here.<br>
+        <strong>Stay tuned and tappped in.</strong>
+      </p>
+      <!-- Buttons -->
     </div>
+    <div class="row">
+      <div class="col-auto">
+        <a href="https://github.com/AndrewT-Tran">
+          <button type='button' class="btn btn-outline-dange icon-link icon-link-hover"
+            style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://github.com/AndrewT-Tran">
+            <i class="bi bi-github"></i>
+          </button></a>
 
-
-
-    <!-- hero section end  -->
-
-
-<!-- about me section -->
-
-    <!-- card section -->
-    <div class="container-fluid w-100 p-3 border-bottom border-success">
-      <div id="aboutme">
-        <h2 class="display-2 bold text-body-emphasis text-center">About Me</h2>
-        <div class="user-card-full">
-        <div class="row g-0">
-          <div class="col-md-3 pt-5">
-            <img src="./assests/112746783.jpg" class="img-thumbnail  rounded-start" alt="profile picture">
-          </div>
-          <div class="col-md-8">
-            <p class="card-text p-3 m-3 ">
-              Hi I'm Andrew, I was born and rasied in San Francisco. I am interested in front-end development with HTML, CSS, JavaScript, and React
-              Back-end development with Node.js, Express, and MongoDB
-              RESTful API design and implementation
-              User authentication and authorization with JWT and bcrypt
-              Responsive web design with Bootstrap and Material UI
-              Testing and debugging with Jest, Enzyme, and Postman
-              Version control with Git and GitHub
-              <div class="row"><a href="https://github.com/AndrewT-Tran" class="bi-github"></a>
-              <a href="https://www.linkedin.com/in/andrew-tran-796357274/" class="bi-linkedin"></a></div>
-            </p>
-
-
-          </div>
-
-        </div>
       </div>
+
+      <div class="col-auto">
+
+        <a href="mailto:me@AndrewTran-shi.dev">
+          <button type='button' class="btn btn-outline-dange icon-link icon-link-hover"
+            style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://github.com/AndrewT-Tran">
+            <i class="bi bi-envelope"></i>
+          </button></a>
+      </div>
+
+      <div class="col-auto">
+        <a href="tel:‪+1-415-483-9422‬">
+          <button type='button' class="btn btn-outline-dange icon-link icon-link-hover"
+            style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://github.com/AndrewT-Tran">
+            <i class="bi bi-telephone-fill"></i>
+          </button></a>
+      </div>
+
     </div>
   </div>
-    <!-- card section end  -->
 
+  <script type="module" src="./script.js"></script>
 
-
-    <!-- project section start -->
-
-    <div class="container-fluid w-100 h-100 p-3 m-3">
-      <div class="row text-center p-3">
-          <h1 class="display-3 bold text-body-emphasis">Projects</h1>
-            <p class="lead mb-4"> Here are some of my projects. </p>
-          </div>
-        </div>
-
-<div class="text">
-  <p>
-    <span class="word wisteria"> React.</span>
-    <span class="word belize"> MySQL.</span>
-    <span class="word pomegranate"> C#.</span>
-    <span class="word green">Python.</span>
-    <span class="word gold">NodeJS.</span>
-  </p>
-
-</div>
-
-          <!-- cards of projects start -->
-
-            <div class="container-fluid w-100 h-100">
-              <div class="row justify-content-center align-items-center pb-3">
-
-                <!-- card 1 start -->
-                <div class="col">
-                  <div class="card-img-top">
-                    <img src="./assests/CleanShot 2023-04-27 at 10.29.39@2x.png" class="img-fluid rounded-start"
-                      alt="Card title">
-                  </div>
-                  <div class="card-body">
-                    <h4 class="card-title">Lo-Fi Task Manager</h4>
-                    <p class="card-text">
-                      A productivity web app that tracks your daily current goals and prioritizes them based on
-                      importance. It also plays Lo-Fi music.</p>
-                  </div>
-                </div>
-                <!-- card 1 end -->
-
-                <!-- card 2 start -->
-
-
-                <div class="col">
-                  <div class="card-img-top">
-                    <img src="./assests/calculator.png" class="img-fluid rounded-start" alt="Card title">
-                  </div>
-                  <div class="card-body">
-                    <h4 class="card-title">Calculator</h4>
-                    <p class="card-text">
-                      Here is a simple calculator app I used to practice implementation of Bootstrap 5. It is not only a
-                      4 function calculator, it is very vissually sppealing as well.</p>
-                  </div>
-                </div>
-                <!-- card 2 end -->
-
-
-
-                <!-- card 3 start -->
-                <div class="col">
-                  <div class="card-img-top">
-                    <img src="./assests/CleanShot 2023-04-27 at 10.29.07@2x.png" class="img-fluid rounded-start"
-                      alt="Card title">
-                  </div>
-                  <div class="card-body">
-                    <h4 class="card-title">Future App</h4>
-                    <p class="card-text">
-                  </div>
-                </div>
-
-                <!-- card 3 end -->
-
-
-              </div>
-            </div>
-          </div>
-
-
-          <!-- card section end -->
-        </div>
-      </div>
-    </div>
-
-
-    <!-- project section end -->
-<div class="box">
-Andrew
-</div>
-
-
-
-
-  </main>
-
-
-
-
-  <footer>
-    <!-- place footer here -->
-
-  </footer>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-    </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-    </script>
-  <script src="./script.js"></script>
 </body>
 
 </html>
